@@ -1,0 +1,66 @@
+{% extends "layouts/base.njk" %}
+
+{% block title %}Contact Us | Pixmart{% endblock %}
+
+{% block content %}
+  <section class="contact-section">
+    <div class="contact-left">
+      <p class="contact-subtitle">CONTACT</p>
+      <h1 class="contact-title">Get in Touch<br />with Us</h1>
+      <p class="contact-text">
+        We are here to help you navigate your creative journey. Reach out for any
+        questions, support, or feedback.
+      </p>
+      <a href="#" class="contact-button">Shop Now</a>
+
+      <ul class="contact-info">
+  <li>
+    <img src="images/icons/phone.svg" alt="Phone Icon" class="contact-icon" />
+    +1 (555) 123-4567
+  </li>
+  <li>
+    <img src="images/icons/message.svg" alt="Email Icon" class="contact-icon" />
+    support@pixmart.com
+  </li>
+  <li>
+    <img src="images/icons/time.svg" alt="Clock Icon" class="contact-icon" />
+    Monday to Friday : 9 AM - 5 PM EST
+  </li>
+</ul>
+
+      <div class="map">
+        <iframe
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.086377878131!2d-122.42067968468207!3d37.779280179758205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808c4ef769c9%3A0x72d8c35e95108c4e!2sDesign%20City!5e0!3m2!1sen!2sus!4v1684952758888!5m2!1sen!2sus"
+  ></iframe>
+      </div>
+    </div>
+
+    <div class="contact-right">
+      <form class="contact-form">
+        <input type="text" placeholder="Full Name" required />
+        <input type="email" placeholder="Email Address" required />
+        <select required>
+          <option>General Inquiry</option>
+          <option>Support</option>
+          <option>Feedback</option>
+        </select>
+        <textarea placeholder="Enter your message ..." rows="5"></textarea>
+
+        <div class="checkboxes">
+          <label class="custom-checkbox">
+            <input type="checkbox" />
+            <span class="checkmark"></span>
+            Subscribe me to Newsletter
+          </label>
+          <label class="custom-checkbox">
+            <input type="checkbox" checked />
+            <span class="checkmark"></span>
+            I have read the User & Privacy Policy
+          </label>
+        </div>
+
+        <button type="submit" class="send-button">Send Message</button>
+      </form>
+    </div>
+  </section>
+{% endblock %}

@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Modern and Clean Digital Marketplace UI for Pixmart." />
+  <title>Pixmart | Digital Assets Marketplace</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;700&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+    <!-- Navbar -->
+  <header class="navbar">
+    <div class="navbar-left">
+      <div class="logo">Pixmart.</div>
+      <nav class="nav-links">
+        <a href="#">About</a>
+        <a href="#">Products</a>
+        <a href="#">Creators</a>
+        <a href="#">Blog</a>
+        <a href="#">Contact</a>
+      </nav>
+    </div>
+    <div class="navbar-right">
+      <div class="search-container">
+        <input type="text" placeholder="Search for Digital Assets" />
+        <button class="search-btn">
+          <img src="images/icons/search-icon.svg" alt="Search" />
+        </button>
+      </div>
+    </div>
+  </header>
+
+<section class="true-figma-hero">
+  <div class="hero-container">
+    <h1>
+      Explore Top<br />
+      <span>UI Kits</span> Design Assets
+    </h1>
+  </div>
+  <div class="wave-overlay">
+  <svg viewBox="0 0 1440 320" preserveAspectRatio="none">
+    <path fill="#ffffff" d="
+      M0,240 
+      C200,220 400,180 600,200 
+      C800,220 1000,300 1200,280 
+      C1300,270 1400,260 1440,255 
+      L1440,320 
+      L0,320 
+      Z
+    " />
+  </svg>
+</div>
+</section>
+
+ <!-- Sidebar -->
+  <div class="page-wrapper">
+    <aside class="filter-sidebar">
+      <div class="filter-group">
+        <h4>Categories</h4>
+        <label><input type="checkbox" checked> All Categories</label>
+        <label><input type="checkbox"> Technology</label>
+        <label><input type="checkbox"> Travel & Tourism</label>
+        <label><input type="checkbox"> Health & Fitness</label>
+        <label><input type="checkbox"> E-Commerce</label>
+        <label><input type="checkbox"> Education</label>
+        <label><input type="checkbox"> Entertainment</label>
+        <label><input type="checkbox"> Others</label>
+      </div>
+      <div class="filter-group">
+        <h4>Format Type</h4>
+        <label><input type="radio" name="format" checked> Figma</label>
+        <label><input type="radio" name="format"> Sketch</label>
+        <label><input type="radio" name="format"> Adobe XD</label>
+        <label><input type="radio" name="format"> Photoshop</label>
+        <label><input type="radio" name="format"> Illustration</label>
+      </div>
+      <div class="filter-group">
+        <h4>Style</h4>
+        <label class="toggle"><input type="checkbox" checked> Minimalist</label>
+        <label class="toggle"><input type="checkbox" checked> Modern</label>
+        <label class="toggle"><input type="checkbox" checked> Playful</label>
+        <label class="toggle"><input type="checkbox" checked> Dark Mode</label>
+        <label class="toggle"><input type="checkbox"> Photocentric</label>
+      </div>
+      <div class="filter-group">
+        <h4>Price</h4>
+        <input type="range" min="5" max="50">
+        <div class="price-range">
+          <span>€5</span>
+          <span>€50</span>
+        </div>
+        <button class="clear-filters">Clear all filters</button>
+      </div>
+      </aside>
+    </aside>
+
+    <!-- Main Content -->
+    <section class="main-content">
+      <div class="top-filter">
+        <div class="top-filter-left">
+          <select class="sort-dropdown">
+            <option>Best Seller</option>
+          </select>
+          <div class="tags">
+            <button class="tag">UI Kit</button>
+            <button class="tag">UX Kit</button>
+          </div>
+        </div>
+        <div class="top-filter-right">
+          <p class="results">Showing 12 out of 120 results.</p>
+          <div class="view-icons">
+            <a class="first-icon" href="#"><img src="images/icons/blog-second.svg" alt="All" /></a>
+            <a class="second-icon" href="#"><img src="images/icons/blog-first.svg" alt="Together" /></a>
+          </div>
+        </div>
+      </div>
+
+     <div class="product-grid">
+  <!-- 12 Product Cards -->
+   <div class="product-card sold-out">
+    <span class="badge">Sold Out</span>
+    <img src="images/career-success.webp" alt="lens chronicles">
+    <div class="content">
+      <h3>Lens Chronicles</h3>
+      <p>Photography ' Creative</p>
+    </div>
+    <div class="bottom-bar">
+      <span class="price">€0.00</span>
+    </div>
+  </div>
+  <div class="product-card new">
+    <span class="badge">New</span>
+    <img src="images/career-sucess.webp" alt="career sucess">
+    <div class="content">
+      <h3>Career Success</h3>
+      <p>Guidance ' Jobs</p>
+    </div>
+    <div class="bottom-bar">
+      <span class="price">€20.99</span>
+      <div class="actions">
+        <button>❤️</button>
+        <button>🛒</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product-card popular">
+    <span class="badge">Popular</span>
+    <img src="images/dream-house.webp" alt="dream house">
+    <div class="content">
+      <h3>Dream House</h3>
+      <p>Real Estate ' Modern</p>
+    </div>
+    <div class="bottom-bar">
+      <span class="price">45.99</span>
+      <div class="actions">
+        <button>❤️</button>
+        <button>🛒</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product-card popular">
+    <span class="badge">Popular</span>
+    <img src="images/food-caterting.webp" alt="foodish catering">
+    <div class="content">
+      <h3>Foodish Catering</h3>
+      <p>Food ' Events</p>
+    </div>
+    <div class="bottom-bar">
+      <span class="price">€15.99</span>
+      <div class="actions">
+        <button>❤️</button>
+        <button>🛒</button>
+      </div>
+    </div>
+  </div>
+
+   <div class="product-card new">
+    <span class="badge">New</span>
+    <img src="images/caring-hearts.webp" alt="caring hearing">
+    <div class="content">
+      <h3>Caring Hearts</h3>
+      <p>Healthcare ' Support</p>
+    </div>
+    <div class="bottom-bar">
+      <span class="price">€19.99</span>
+      <div class="actions">
+        <button>❤️</button>
+        <button>🛒</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product-card sold-out">
+    <span class="badge">Sold Out</span>
+    <img src="images/career-success.webp" alt="gaming rise">
+    <div class="content">
+      <h3>Gaming Rise</h3>
+      <p>eSports ' Trends</p>
+    </div>
+    <div class="bottom-bar">
+      <span class="price">€0.00</span>
+    </div>
+  </div>
+
+  <div class="product-card sold-out">
+    <span class="badge">Sold Out</span>
+    <img src="images/career-success.webp" alt="edit pro">
+    <div class="content">
+      <h3>Edit Pro</h3>
+      <p>Design ' Tools</p>
+    </div>
+    <div class="bottom-bar">
+      <span class="price">€0.00</span>
+      <div class="actions">
+        <button>❤️</button>
+        <button>🛒</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product-card new">
+    <span class="badge">New</span>
+    <img src="images/banking-redefined.webp" alt="banking redefined">
+    <div class="content">
+      <h3>Banking Redefined</h3>
+      <p>Finance ' Secure</p>
+    </div>
+    <div class="bottom-bar">
+      <span class="price">€25.99</span>
+      <div class="actions">
+        <button>❤️</button>
+        <button>🛒</button>
+      </div>
+    </div>
+  </div>
+
+<div class="product-card popular">
+    <span class="badge">Popular</span>
+    <img src="images/exploring.webp" alt="exploring fun">
+    <div class="content">
+      <h3>Exploring Fun</h3>
+      <p>Travel ' Adventure</p>
+    </div>
+    <div class="bottom-bar">
+      <span class="price">€41.99</span>
+      <div class="actions">
+        <button>❤️</button>
+        <button>🛒</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product-card popular">
+    <span class="badge">Popular</span>
+    <img src="images/admin-dashboard.webp" alt="admin dashboard">
+    <div class="content">
+      <h3>Admin Dashboard</h3>
+      <p>Data ' Tools</p>
+    </div>
+    <div class="bottom-bar">
+      <span class="price">€15.99</span>
+      <div class="actions">
+        <button>❤️</button>
+        <button>🛒</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product-card new">
+    <span class="badge">New</span>
+    <img src="images/analytical.webp" alt="analytical dashboard">
+    <div class="content">
+      <h3>Analytical Dashboard</h3>
+      <p>Data ' Tools</p>
+    </div>
+    <div class="bottom-bar">
+      <span class="price">€10.99</span>
+      <div class="actions">
+        <button>❤️</button>
+        <button>🛒</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product-card sold-out">
+    <span class="badge">Sold Out</span>
+    <img src="images/career-success.webp" alt="Product 4">
+    <div class="content">
+      <h3>Kindergarten</h3>
+      <p>Education ' Kids</p>
+    </div>
+    <div class="bottom-bar">
+      <span class="price">€0.00</span>
+  
+    </div>
+  </div>
+
+  </div>
+
+</div>
+      <button class="load-more">Load more</button>
+    </section>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-brand">
+      <div class="logo">Pixmart.</div>
+      <p>Your premium digital assets solution with high quality and comprehensive range of products and services.</p>
+      <div class="footer-socials">
+        <a href="#"><img src="images/icons/twitter.svg" alt="Twitter" /></a>
+        <a href="#"><img src="images/icons/facebook.svg" alt="Facebook" /></a>
+        <a href="#"><img src="images/icons/Telegram.svg" alt="Telegram" /></a>
+      </div>
+    </div>
+    <div class="footer-columns">
+      <div class="footer-column">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#">Homepage v1</a></li>
+          <li><a href="#">Homepage v2</a></li>
+          <li><a href="#">Homepage v3</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Blog Articles</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Products</h4>
+        <ul>
+          <li><a href="#">Website</a></li>
+          <li><a href="#">Mobile App</a></li>
+          <li><a href="#">Social Media Feeds</a></li>
+          <li><a href="#">Product Mockups</a></li>
+          <li><a href="#">Presentation</a></li>
+          <li><a href="#">illustrations</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Account</h4>
+        <ul>
+          <li><a href="#">Your Cart</a></li>
+          <li><a href="#">Check Out</a></li>
+          <li><a href="#">Refund Policy</a></li>
+          <li><a href="#">Customer Support</a></li>
+          <li><a href="#">Send a message</a></li>
+          <li><a href="#">Compnay Policy</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Newsletter -->
+  <div class="footer-newsletter">
+    <p>Subscribe to our newsletter to get our latest updates</p>
+    <form>
+      <input type="email" placeholder="Your email address" />
+      <button type="submit">Subscribe</button>
+    </form>
+  </div>
+
+  <!-- Footer Bottom -->
+  <div class="footer-bottom--first">
+    <p>Copyright © 2024 Pixmart. All rights reserved.</p>
+  </div>
+  <div class="footer-bottom--second">
+    <p>Privacy Policy | Terms and conditions | Site Map</p>
+  </div>
+
+
+  

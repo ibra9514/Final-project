@@ -1,0 +1,258 @@
+  {
+    "title": "Pixmart | Digital Assets Marketplace",
+    "description": "Modern and Clean Digital Marketplace UI for Pixmart.",
+    "navbar": {
+      "logo": "Pixmart.",
+      "links": ["About", "Products", "Creators", "Blog", "Contact"]
+    },
+    "hero": {
+      "heading": "Craft Your <br />Success with <br /><span>Digital</span> Assets",
+      "description": "From our inspiring illustrations to dynamic UI/UX kits, elevate your projects with our premium digital design resources.",
+      "buttons": ["Shop Now", "Watch About Us"]
+    },
+    "iconRow": [
+      { "icon": "Illustration.svg", "label": "UI Kits" },
+      { "icon": "social-media.svg", "label": "Social Media" },
+      { "icon": "presenation.svg", "label": "Presentation" },
+      { "icon": "font.svg", "label": "Fonts" },
+      { "icon": "Illustration.svg", "label": "Illustrations" }
+    ],
+    "categories": {
+      "title": "Discover Assets for <br /> Every Projects",
+      "description": "From fonts and icons to mockups and templates, our comprehensive categories ensure that you find exactly what you need to your projects.",
+      "button": "Shop Now",
+      "cards": [
+        { "icon": "Illustration.svg", "title": "Templates", "desc": "For all needs • Modern" },
+        { "icon": "social-media.svg", "title": "App Icons", "desc": "High-quality • Elegant", "active": true },
+        { "icon": "presenation.svg", "title": "Slides", "desc": "Pitch-ready • Creative" },
+        { "icon": "Illustration.svg", "title": "Design Tools", "desc": "Easy to use • Unique" }
+      ]
+    },
+    "products": {
+      "title": "Popular Products",
+      "label": "TRENDING",
+      "cards": [
+        { "image": "travel-hero.webp", "title": "Travel Hero", "price": "€29.99", "tags": "Adventure • Journey" },
+        { "image": "prod/healthcare-pro.png", "title": "Healthcare Pro", "price": "€15.99", "tags": "Medical • Wellness" },
+        { "image": "food-delight.webp", "title": "Foodish Delight", "price": "€31.99", "tags": "Catering • Food" },
+        { "image": "real-estate.webp", "title": "Real Estate", "price": "€40.99", "tags": "Modern • Homes" }
+      ]
+    },
+    "pricing": {
+      "title": "Choose The Perfect Plan for Creative Potential",
+      "plans": [
+        {
+          "name": "Standard Membership",
+          "price": "€14.99",
+          "features": ["Enhanced Resource Access", "Monthly Credits", "Priority Customer Support", "Community Features Access"],
+          "button": "Subscribe",
+          "highlight": false
+        },
+        {
+          "name": "Plus Membership",
+          "price": "€29.99",
+          "features": ["All Standard Benefits", "Increased Monthly Credits", "Early Access to New Releases", "Member-Only Offers"],
+          "button": "Subscribe",
+          "highlight": true
+        },
+        {
+          "name": "Pro Membership",
+          "price": "€49.99",
+          "features": ["All Plus Benefits", "Unlimited Downloads", "Custom Licensing", "Direct Creator Collaboration"],
+          "button": "Subscribe",
+          "highlight": false
+        }
+      ]
+    },
+    "faq": {
+      "title": "Answers to Your Questions",
+      "questions": [
+        {
+          "q": "How do I access my purchased products?",
+          "a": "Accessing your purchased products is seamless and hassle-free. Simply log in, go to 'My Purchases', and download your assets."
+        },
+        { "q": "Can I request a refund?" },
+        { "q": "Are there any discounts for bulk purchases?" },
+        { "q": "What payment methods do you accept?" },
+        { "q": "Can I sell my products on Pixmart?" }
+      ]
+    },
+    "blogList": [
+    {
+      "image": "best-dishes.webp",
+      "title": "Best Dishes",
+      "date": "15 APRIL 2024",
+      "imgTag": "<img src=\"/img/best-dishes.webp\" alt=\"Best Dishes\" />"
+    },
+    {
+      "image": "contact-us.webp",
+      "title": "Contact Us Lotus Spa",
+      "date": "5 MAY 2024",
+      "imgTag": "<img src=\"/img/contact-us.webp\" alt=\"Contact Us Lotus Spa\" />"
+    },
+    {
+      "image": "bina-box.webp",
+      "title": "Creative Blog",
+      "date": "20 JUNE 2024",
+      "imgTag": "<img src=\"/img/bina-box.webp\" alt=\"Creative Blog\" />"
+    }
+  ],
+    "blogSidebar": {
+      "categories": [
+        "Graphic Design Trends",
+        "Typography & Fonts",
+        "UI/UX Design",
+        "Branding & Identity",
+        "Illustration",
+        "Digital Marketing"
+      ],
+      "latest": [
+        { "title": "Text", "date": "March 15, 2024" },
+        { "title": "Text", "date": "March 15, 2024" }
+      ]
+    },
+
+    "catalog": {
+    "hero": {
+      "title": "Explore Top<br><span>UI Kits</span> Design Assets"
+    },
+    "filters": {
+      "categories": [
+        "All Categories",
+        "Technology",
+        "Travel & Tourism",
+        "Health & Fitness",
+        "E-Commerce",
+        "Education",
+        "Entertainment",
+        "Others"
+      ],
+      "formats": ["Figma", "Sketch", "Adobe XD", "Photoshop", "Illustration"],
+      "styles": ["Minimalist", "Modern", "Playful", "Dark Mode", "Photocentric"],
+      "priceRange": {
+        "min": 5,
+        "max": 50
+      },
+      "clearButton": "Clear all filters"
+    },
+    "topFilter": {
+      "sortOptions": ["Best Seller"],
+      "tags": ["UI Kit", "UX Kit"],
+      "resultsText": "Showing 12 out of 120 results."
+    },
+    "products": [
+  {
+    "badge": "Sold Out",
+    "image": "career-success-2x.webp",
+    "title": "Lens Chronicles",
+    "tags": "Photography ' Creative",
+    "price": "€0.00"
+  },
+  {
+    "badge": "New",
+    "image": "career-success-2x.webp",
+    "title": "Career Success",
+    "tags": "Guidance ' Jobs",
+    "price": "€20.99"
+  },
+  {
+    "badge": "Popular",
+    "image": "dream-house-2x.webp",
+    "title": "Dream House",
+    "tags": "Real Estate ' Modern",
+    "price": "€45.99"
+  },
+  {
+    "badge": "Popular",
+    "image": "food-catering-2x.webp",
+    "title": "Foodish Catering",
+    "tags": "Food ' Events",
+    "price": "€15.99"
+  },
+  {
+    "badge": "New",
+    "image": "caring-hearts-2x.webp",
+    "title": "Caring Hearts",
+    "tags": "Healthcare ' Support",
+    "price": "€19.99"
+  },
+  {
+    "badge": "Sold Out",
+    "image": "career-success-2x.webp",
+    "title": "Gaming Rise",
+    "tags": "eSports ' Trends",
+    "price": "€0.00"
+  },
+  {
+    "badge": "Sold Out",
+    "image": "career-success-2x.webp",
+    "title": "Edit Pro",
+    "tags": "Design ' Tools",
+    "price": "€0.00"
+  },
+  {
+    "badge": "New",
+    "image": "banking-redefined-2x.webp",
+    "title": "Banking Redefined",
+    "tags": "Finance ' Secure",
+    "price": "€25.99"
+  },
+  {
+    "badge": "Popular",
+    "image": "exploring-2x.webp",
+    "title": "Exploring Fun",
+    "tags": "Travel ' Adventure",
+    "price": "€41.99"
+  },
+  {
+    "badge": "Popular",
+    "image": "admin-dashboard-2x.webp",
+    "title": "Admin Dashboard",
+    "tags": "Data ' Tools",
+    "price": "€15.99"
+  },
+  {
+    "badge": "New",
+    "image": "analytical-2x.webp",
+    "title": "Analytical Dashboard",
+    "tags": "Data ' Tools",
+    "price": "€10.99"
+  },
+  {
+    "badge": "Sold Out",
+    "image": "career-success-2x.webp",
+    "title": "Kindergarten",
+    "tags": "Education ' Kids",
+    "price": "€0.00"
+  }
+],
+"loadMoreText": "Load more"
+},
+    
+    "contact": {
+      "heading": "Get in Touch",
+      "subheading": "We’d love to hear from you. Send us a message and we’ll respond as soon as possible.",
+      "form": {
+        "nameLabel": "Your Name",
+        "emailLabel": "Your Email",
+        "messageLabel": "Your Message",
+        "submitButton": "Send Message"
+      },
+      "info": {
+        "address": "123 Digital Street, Limassol, Cyprus",
+        "email": "support@pixmart.com",
+        "phone": "+357 99 123456"
+      }
+    },
+
+    "footer": {
+      "company": ["Homepage v1", "Homepage v2", "Homepage v3", "About Us", "About Us", "Blog Articles"],
+      "products": ["Website", "Mobile App", "Social Media Feeds", "Product Mockups", "Presentation", "Illustrations"],
+      "account": ["Your Cart", "Check Out", "Refund Policy", "Customer Support", "Send a message", "Company Policy"]
+    },
+    "newsletter": "Subscribe to our newsletter to get our latest updates",
+    "footerBottom": {
+      "copyright": "Copyright © 2024 Pixmart. All rights reserved.",
+      "links": "Privacy Policy | Terms and conditions | Site Map"
+    }
+  }

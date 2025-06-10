@@ -1,0 +1,74 @@
+{% extends "layouts/base.njk" %}
+
+{% block title %}Blog | Pixmart{% endblock %}
+
+{% block content %}
+<section class="figma-hero">
+  <div class="hero-container">
+    <div class="category-tag">Typography</div>
+    <h1 class="article-title">
+      Mastering the Art of Typography:<br>
+      Tips for Eye–Catching Designs for 2024
+    </h1>
+    <div class="article-image-wrapper">
+      <img src="/img/blog-2x.webp" alt="Presentation image" class="article-image" />
+    </div>
+  </div>
+</section>
+
+<section class="article-layout">
+  {% include "partials/sidebar.njk" %}
+  <main class="article-main">
+    <main class="article-main">
+    <p class="intro">
+      In the vast expanse of graphic design, typography stands as a pivotal element that can make or break the
+       visual appeal of any project. Understanding the art of typography is essential for creating designs that not 
+       only attract attention but also communicate effectively. Here, we delve into practical tips that will help you 
+       master typography, transforming your creations into eye-catching masterpieces.
+    </p>
+    <h2>1. Understand Typeface Selection</h2>
+    <p>
+      The choice of typeface is foundational in setting the tone of your design. Serif fonts, with their classic appeal,
+       lend a touch of elegance and formality, making them ideal for print media and official documents. Sans-serif fonts,
+        on the other hand, project a modern and clean look, perfect for digital platforms. When selecting a typeface, consider the message you wish 
+      to convey and the medium through which it will be communicated.
+    </p>
+    <h2>2. Create a Typographic Hierarchy</h2>
+    <p>
+      A well-defined typographic hierarchy organizes information, making it easier for readers to navigate through the content.
+       Use different font sizes, weights, and styles to differentiate between headings, subheadings, and body text. This hierarchy not only
+        improves readability but also adds visual interest to your next future design.
+    </p>
+    <div class="article-image-block">
+      <img src="img/blog-presentation-2x.webp" alt="Presentation image" />
+      <p class="caption">Example of font usage in typography.</p>
+    </div>
+    <h2>3. Experiment with Alignment</h2>
+    <p>
+      While center and right alignments have their place, left-aligned text is generally the most legible and comfortable for readers, 
+      especially for longer passages. However, don’t shy away from experimenting with different alignments in headings or callouts to add dynamism to your layout.
+    </p>
+    <h2>Embrace White Space</h2>
+    <p>
+      White space, or negative space, is a powerful tool in typography. It helps in decluttering designs
+       and allows each typographic element to breathe. Proper use of white space can significantly improve the overall balance
+        and composition of your design.
+    </p>
+    <div class="blockquote">
+    <div class="quote-icon">❝</div>
+    <p class="highlight">
+      <strong>Typography is not just the art of arranging type but the craft of breathing life into characters, 
+        turning words into stories that captivate the soul.</strong>
+    </p>
+  </div>
+
+  <!-- Final supporting text -->
+  <p class="closing">
+    Typography is an art that speaks volumes beyond the mere letters on a surface. By applying these tips, designers can elevate their work from mere messages to powerful visual statements. Remember, mastering typography is a journe...
+  </p>
+
+  </main>
+</section>
+
+{% include "partials/related-article.njk" %}
+{% endblock %}

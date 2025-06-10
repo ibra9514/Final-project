@@ -1,0 +1,36 @@
+<aside class="sidebar">
+  <div class="author">
+    <img src="img/emila-2x.webp" alt="Author" />
+    <div class="author-info">
+      <strong>Emma Clarke</strong>
+      <p>April 10, 2024</p>
+    </div>
+  </div>
+
+  <hr />
+
+  <!-- Dynamic categories -->
+  <div class="sidebar-section">
+    <h3>Categories</h3>
+    <ul class="category-list">
+      {% for category in blogSidebar.categories %}
+        <li{% if loop.index == 2 %} class="active"{% endif %}>
+          <a href="#"><span class="dot"></span> {{ category }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+
+  <hr />
+
+  <!-- Dynamic latest articles -->
+  <div class="sidebar-section">
+    <h3>Latest Articles</h3>
+    {% for article in blogSidebar.latest %}
+      <div class="latest-article">
+        <p class="title">{{ article.title }}</p>
+        <span class="date">{{ article.date }}</span>
+      </div>
+    {% endfor %}
+  </div>
+</aside>

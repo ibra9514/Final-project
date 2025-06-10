@@ -1,0 +1,99 @@
+{% extends "layouts/base.njk" %}
+
+{% block title %}Catalog | Pixmart{% endblock %}
+
+{% block content %}
+<section class="true-figma-hero">
+  <div class="hero-container">
+    <h1>{{ catalog.hero.title | safe }}</h1>
+  </div>
+  <div class="wave-overlay">
+    <svg viewBox="0 0 1440 320" preserveAspectRatio="none">
+      <path fill="#ffffff" d="M0,240 C200,220 400,180 600,200 C800,220 1000,300 1200,280 C1300,270 1400,260 1440,255 L1440,320 L0,320 Z" />
+    </svg>
+  </div>
+</section>
+
+<div class="page-wrapper">
+  <aside class="filter-sidebar">
+    <div class="filter-group">
+      <h4>Categories</h4>
+      {% for category in catalog.filters.categories %}
+        <label><input type="checkbox" {% if loop.index0 == 0 %}checked{% endif %}> {{ category }}</label>
+      {% endfor %}
+    </div>
+
+    <div class="filter-group">
+      <h4>Format Type</h4>
+      {% for format in catalog.filters.formats %}
+        <label><input type="radio" name="format" {% if loop.index0 == 0 %}checked{% endif %}> {{ format }}</label>
+      {% endfor %}
+    </div>
+
+    <div class="filter-group">
+      <h4>Style</h4>
+      {% for style in catalog.filters.styles %}
+        <label class="filter-group__toggle"><input type="checkbox" checked> {{ style }}</label>
+      {% endfor %}
+    </div>
+
+    <div class="filter-group">
+      <h4>Price</h4>
+      <input type="range" min="{{ catalog.filters.priceRange.min }}" max="{{ catalog.filters.priceRange.max }}">
+      <div class="price-range">
+        <span>€{{ catalog.filters.priceRange.min }}</span>
+        <span>€{{ catalog.filters.priceRange.max }}</span>
+      </div>
+      <button class="clear-filters">Clear all filters</button>
+    </div>
+  </aside>
+
+  <section class="main-content">
+    <div class="top-filter">
+      <div class="top-filter-left">
+        <select class="sort-dropdown">
+          <option>Best Seller</option>
+        </select>
+        <div class="tags">
+          
+          <img src="/img/icons/blog-first.svg" alt="Search" />
+        <img src="/img/icons/blog-second.svg" alt="Search" />
+      </button>
+        </div>
+      </div>
+      <div class="top-filter-right">
+        <p class="results">Showing {{ catalog.products.length }} results.</p>
+        <div class="view-icons">
+          <a class="view-icons__button--first" href="#"><img src="/images/icons/blog-second.svg" alt="All" /></a>
+<a class="view-icons__button--second" href="#"><img src="/images/icons/blog-first.svg" alt="Together" /></a>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="product-grid">
+      {% for product in catalog.products %}
+      <div class="product-card {{ product.badge | lower | replace(' ', '-') }}">
+        <span class="badge">{{ product.badge }}</span>
+        <img src="/img/{{ product.image }}" alt="{{ product.alt }}">
+        <div class="content">
+          <h3>{{ product.title }}</h3>
+          <p>{{ product.tags }}</p>
+        </div>
+        <div class="bottom-bar">
+          <span class="price">{{ product.price }}</span>
+          {% if product.badge != 'Sold Out' %}
+          <div class="actions">
+            <button>❤️</button>
+            <button>🛒</button>
+          </div>
+          {% endif %}
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+
+    <button class="load-more">Load more</button>
+  </section>
+</div>
+{% endblock %}
